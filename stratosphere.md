@@ -32,3 +32,5 @@ Ik lees Struts, dus weet ik genoeg.
 ```searchsploit -x linux/webapps/41570.py ```
 
 Dit is een Python script dat CVE-2017-5638 probeert te exploiteren.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/4.PNG" />
