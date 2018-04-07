@@ -65,7 +65,7 @@ Het ziet er naar uit dat ik `` /home/richard/test.py `` mag uitvoeren als root. 
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/10.PNG" />
 
-Dit ziet er naar uit dat dit een soort <li>Solve-the-hash(?)</li> challenge is en zodra je alles goed heb het /root/success.py uitvoert. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
+Dit ziet er naar uit dat dit een soort <u>Solve-the-hash(?)</u> challenge is en zodra je alles goed heb het /root/success.py uitvoert. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
 
 Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!`` <br>
 Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabisshinobi`` <br>
