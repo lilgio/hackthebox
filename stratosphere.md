@@ -71,3 +71,6 @@ Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!``
 Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabisshinobi`` <br>
 Derde  hash: `` john --format=raw-md4 --wordlist=~/rockyou.txt hash # legend72`` <br>
 Vierde hash: `` john --format=raw-blake2 --wordlist=~/rockyou.txt hash # Fhero6610 `` <br>
+
+#### Ook wel geinig om te vermelden is dat je persé de volledige paden moet gebruiken zoals aangegeven in sudo -l
+##### Dus geen `` sudo python test.py`` , maar `` /usr/bin/python3 /home/richard/test.py ``
