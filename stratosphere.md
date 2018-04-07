@@ -6,7 +6,7 @@ Eerst begin ik met een Nmap scan
 
 ``` nmap -sV -p- -T5 -oN 10.10.10.64.nmap```
 
-<img src="images/stratosphere/1.png" />
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/1.PNG" />
 
 <ul>
 	<li>sV: xxx </li>
