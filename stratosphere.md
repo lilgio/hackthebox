@@ -67,7 +67,7 @@ Het ziet er naar uit dat ik `` /home/richard/test.py `` mag uitvoeren als root. 
 
 Oké, het verwacht dat je een aantal hashes cracked en vervolgens wordt /root/succes.py aangeroepen. Dit is allemaal wel leuk en aardig met aangezien er geen sticky bit op test.py zit is het vrij nutteloos om het te gaan proberen. Maar dit is Hackthebox dus deed ik het alsnog. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
 
-Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!``
+Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!`` <br>
 Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabisshinobi`` <br>
 Derde  hash: `` john --format=raw-md4 --wordlist=~/rockyou.txt hash # legend72`` <br>
 Vierde hash: `` john --format=raw-blake2 --wordlist=~/rockyou.txt hash # Fhero6610 `` <br>
