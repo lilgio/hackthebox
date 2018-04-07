@@ -9,9 +9,9 @@ Eerst begin ik met een Nmap scan
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/1.PNG" />
 
 <ul>
-	<li>sV: xxx </li>
-	<li>-p-: xxx </li>
-	<li>-T5: xxx </li>
-	<li>-oN: xxx </li>
+	<li>sV: Probeer versie namen te vinden</li>
+	<li>-p-: Scan alle TCP poorten </li>
+	<li>-T5: Scan snel en aggresief</li>
+	<li>-oN: Save output als Nmap formaat </li>
 </ul>
 
