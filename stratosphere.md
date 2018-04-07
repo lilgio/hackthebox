@@ -51,7 +51,7 @@ Hierdoor is het mogelijk om statements uit te voeren zonder een interactieve she
 
 Dit ziet er héél lekker uit. Hier zie ik een gebruiker genaamd Richard en zijn wachtwoord. Dit zijn vast ook zijn SSH credentials.
 
-<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/7.PNG" />
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/8.PNG" />
 
 Boom, ez lyfe.
 
