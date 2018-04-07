@@ -72,5 +72,9 @@ Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabis
 Derde  hash: `` john --format=raw-md4 --wordlist=~/rockyou.txt hash # legend72`` <br>
 Vierde hash: `` john --format=raw-blake2 --wordlist=~/rockyou.txt hash # Fhero6610 `` <br>
 
-#### Ook wel geinig om te vermelden is dat je persé de volledige paden moet gebruiken zoals aangegeven in sudo -l
-##### Dus geen `` sudo python test.py`` , maar `` /usr/bin/python3 /home/richard/test.py ``
+#### NOTE: Je moet persé de volledige paden gebruiken zoals aangegeven in sudo -l
+##### Dus geen `` sudo python test.py`` , maar `` sudo /usr/bin/python3 /home/richard/test.py ``
+
+Oké, ik heb nu van alle hashes de plaintext vorm. Kijken wat er gebeurt als ik het invoer:
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/11.PNG" />
