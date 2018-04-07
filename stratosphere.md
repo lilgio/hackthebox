@@ -21,6 +21,14 @@ Er is een webserver dus draai ik meteen een dirbsearch scan:
 ```python3 dirsearch.py -u http://10.10.10.64 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php -t 25 ```
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/2.PNG" />
-
 Argumenten spreken voor zich neem ik aan.
 
+Wanneer ik naar /Monitoring navigeer word ik omgeleid naar http://10.10.10.64/Monitoring/example/Welcome.action. Ik wist niet precies wat er bij .action bestanden hoorden dus had ik dat opgezocht op Google.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/3.PNG" />
+
+Ik lees Struts, dus weet ik genoeg.
+
+```searchsploit -x linux/webapps/41570.py ```
+
+Dit is een Python script dat CVE-2017-5638 probeert te exploiteren.
