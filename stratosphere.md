@@ -2,7 +2,7 @@
 
 ## Low privilege
 
-Eerst begin ik met een Nmap scan
+Eerst begin ik met een Nmap scan:
 
 ``` nmap -sV -p- -T5 -oN 10.10.10.64.nmap```
 
@@ -14,4 +14,13 @@ Eerst begin ik met een Nmap scan
 	<li>-T5: Scan snel en aggresief</li>
 	<li>-oN: Save output als Nmap formaat </li>
 </ul>
+
+
+Er is een webserver dus draai ik meteen een dirbsearch scan:
+
+```python3 dirsearch.py -u http://10.10.10.64 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php -t 25 ```
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/2.PNG" />
+
+Argumenten spreken voor zich neem ik aan.
 
