@@ -86,3 +86,7 @@ Na het eindeloos analyseren van het script viel het me ineens op dat bovenaan he
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/12.PNG" />
 
 Zoals je ziet is het een simpele Python script met alleen een functie dat "Gio" print. Eens kijken wat er nu gebeurt als ik test.py uitvoer.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/13.PNG" />
+
+Ja hoor! Net voor de error staat "Gio", dit betekent dat ik willekeurige Python code kan uitvoeren als de gebruiker root. 
