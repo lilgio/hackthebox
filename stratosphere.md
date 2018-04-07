@@ -57,3 +57,17 @@ Boom, ez lyfe.
 
 ## Privilege escalation
 
+Het eerste dat ik doe als ik user ben op een machine is kijken of die user bestanden mag openen als root, dit doe ik doormiddel van de commando `` sudo -l ``
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/9.PNG" />
+
+Het ziet er naar uit dat ik `` /home/richard/test.py `` mag uitvoeren als root. eens kijken wat dat script precies doet:
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/10.PNG" />
+
+Oké, het verwacht dat je een aantal hashes cracked en vervolgens wordt /root/succes.py aangeroepen. Dit is allemaal wel leuk en aardig met aangezien er geen sticky bit op test.py zit is het vrij nutteloos om het te gaan proberen. Maar dit is Hackthebox dus deed ik het alsnog. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
+
+Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!``
+Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabisshinobi``
+Derde  hash: `` john --format=raw-md4 --wordlist=~/rockyou.txt hash # legend72``
+Vierde hash: `` john --format=raw-blake2 --wordlist=~/rockyou.txt hash # Fhero6610 ``
