@@ -40,3 +40,20 @@ Hoppa, remote code execution! Het is nu de bedoeling dat ik een shell krijg, en 
 Ongeveer 2 uur later is mijn irritatie grens bereikt en probeer ik te kijken of er misschien andere interesante dingen zijn. Het eerste wat ik dan doe is kijken of de webserver database credentials lekt en met deze proberen in te loggen. Ik zie (via het Python script) dat er een ``db_connect`` bestaat, en deze bevatten de database credentials :).
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/5.PNG" />
+
+Oké vet, maar ik heb geen shell dus is het niet echt mogelijk om een interactieve MySQL shell te krijgen. Na een tijdje door de man pagina van MySQL te hebben gebladerd kwam ik iets heel interesant tegen:
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/6.PNG" />
+
+Hierdoor is het mogelijk om statements uit te voeren zonder een interactieve shell te hebben. Dus, ik weet de credentials van de database en ik heb een manier gevonden om statements uit te voeren.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/7.PNG" />
+
+Dit ziet er héél lekker uit. Hier zie ik een gebruiker genaamd Richard en zijn wachtwoord. Dit zijn vast ook zijn SSH credentials.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/7.PNG" />
+
+Boom, ez lyfe.
+
+## Privilege escalation
+
