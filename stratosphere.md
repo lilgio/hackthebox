@@ -65,7 +65,7 @@ Het ziet er naar uit dat ik `` /home/richard/test.py `` mag uitvoeren als root. 
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/10.PNG" />
 
-Oké, het verwacht dat je een aantal hashes cracked en vervolgens wordt /root/succes.py aangeroepen. Dit is allemaal wel leuk en aardig met aangezien er geen sticky bit op test.py zit is het vrij nutteloos om het te gaan proberen. Maar dit is Hackthebox dus deed ik het alsnog. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
+Dit ziet er naar uit dat dit een soort <li>Solve-the-hash(?)</li> challenge is en zodra je alles goed heb het /root/success.py uitvoert. In het script staat precies welke algoritme bij welke hash hoort. ```John``` is een tool die dit voor mij kan oplossen.
 
 Eerste hash: `` john --format=raw-md5 --wordlist=~/rockyou.txt hash # kaybboo!`` <br>
 Tweede hash: `` john --format=raw-sha1 --wordlist=~/rockyou.txt hash # ninjaabisshinobi`` <br>
