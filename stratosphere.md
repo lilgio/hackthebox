@@ -78,3 +78,11 @@ Vierde hash: `` john --format=raw-blake2 --wordlist=~/rockyou.txt hash # Fhero66
 Oké, ik heb nu van alle hashes de plaintext vorm. Kijken wat er gebeurt als ik het invoer:
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/11.PNG" />
+
+k, nice scam. De challenge was dus een rabbit hole, want /root/success.py bestaat niet. Het aanpassen van het script is ook niet mogelijk aangezien ik alleen execute rechten heb, en het bestand een andere naam geven lukt ook niet. Dus de kwetsbaarheid zit 100% in het script zelf. 
+
+Na het eindeloos analyseren van het script viel het me ineens op dat bovenaan het script hashlib wordt geïmporteerd. Nu weet ik toevallig dat lokale bestanden voorrang hebben wanneer iets geïmporteerd wordt. Wat ik nu ga proberen is zelf `` hashlib.py`` te maken met de functie `` md5`` om vervolgens te kijken of dit daadwerkelijk het geval is.
+
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/12.PNG" />
+
+Zoals je ziet is het een simpele Python script met alleen een functie dat "Gio" print. Eens kijken wat er nu gebeurt als ik test.py uitvoer.
