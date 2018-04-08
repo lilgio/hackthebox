@@ -90,7 +90,7 @@ Zoals je ziet is het een simpele Python script met alleen een functie dat "Gio" 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/13.PNG" />
 
 Ja hoor! Net voor de error staat "Gio", dit betekent dat ik willekeurige Python code kan uitvoeren als de gebruiker root. 
-Python heeft functies im systeem commando's aan te roepen, en aangezien ik weet dat de code wordt gebruikt is het een kwesite van hashlib aanpassen en root worden.
+Python heeft functies die systeem commando's aan kunnen roepen, en aangezien ik weet dat de code wordt gebruikt is het een kwesite van hashlib aanpassen en root worden.
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/stratosphere/14.PNG" />
 
