@@ -39,7 +39,7 @@ echo "[+] Testing if a webserver is running on port 80";
 
 if [[ $(curl -Is http://$boxName.htb | grep HTTP/1.1 | awk {'print $2'}) == 200 ]]; then
 	echo "[+] Starting simple dirb scan";
-	dirb http://$IP > dirb.out;
+	dirb http://$boxName.htb > dirb.out;
 else
 	echo "[+] $IP doesn't seem to have a webserver on port 80";
 fi
