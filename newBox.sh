@@ -24,14 +24,14 @@ dirCheck "$rootdir";
 
 echo "[+] Doing this manually would probably more efficient, but if you just want to scan and watch some Netflix this is your thang";
 
-echo "[+] Building a new directory";
+echo "[+] Building new directory";
 
 cd $rootdir;
 mkdir $dir;
 echo "[+] Navigating to $dir";
 cd $dir;
 touch logs;
-echo "[+] Starting nmap scan..";
+echo "[+] Starting Nmap scan..";
 echo "[+] Adding $boxName.htb to /etc/hosts";
 echo "$IP $boxName.htb" >> /etc/hosts;
 nmap -sV -p- -T5  -v $IP -oN $IP.nmap;
