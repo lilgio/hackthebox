@@ -37,9 +37,9 @@ echo "$IP $boxName.htb" >> /etc/hosts;
 nmap -sV -p- -T5  -v $IP -oN $IP.nmap;
 echo "[+] Test to see if a webserver is running on port 80";
 
-if [[ $(curl -Is http://10.10.10.73 |grep HTTP/1.1| awk {'print $2'}) == 200 ]]; then
+if [[ $(curl -Is http:/$boxName.htb | grep HTTP/1.1 | awk {'print $2'}) == 200 ]]; then
 	echo "[+] Starting simple dirb scan";
-	dirb http://$IP > dirb.out
+	dirb http://$IP > dirb.out;
 else
 	echo "[+] $IP doesn't seem to have a webserver on port 80";
 fi
