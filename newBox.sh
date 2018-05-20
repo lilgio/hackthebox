@@ -31,9 +31,9 @@ mkdir $dir;
 echo "[+] Navigating to $dir";
 cd $dir;
 touch logs;
-echo "[+] Starting Nmap scan..";
 echo "[+] Adding $boxName.htb to /etc/hosts";
 echo "$IP $boxName.htb" >> /etc/hosts;
+echo "[+] Starting Nmap scan..";
 nmap -sV -p- -T5  -v $IP -oN $IP.nmap;
 echo "[+] Testing if a webserver is running on port 80";
 
