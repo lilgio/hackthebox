@@ -6,12 +6,14 @@ Eerst begin ik met een Nmap scan:
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/1.PNG">
 
 Er draait FTP. Misschien is het mogelijk om in te loggen als de anonymous gebruiker, dit kan door de gebruikersnaam anonymous in combinatie met een willekeurige wachtwoord te gebruiken.
+
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/2.PNG">
 Dit ziet er XML-ish uit. Tot nu toe heb ik er niks aan, maar deze houd ik mijn achterhoofd.
 
 Er draait ook een webserver en de index is een standaard Apache2 pagina. Eens kijken of Dirbuster misschien iets meer kan vinden (Dirsearch deed het raar genoeg niet):
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/3.PNG">
 Eens kijken wat hosts.php te bieden heeft: 
+
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/4.PNG">
 Heel wazig; er zijn 4294967294 hosts voor.. niks? Als ik de request zie ik eigenlijk ook niets dat misschien verborgen had kunnen zijn. Misschien kan ik de XML-ish spul van net gebruiken om te kijken of dat iets doet:
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/5.PNG">
@@ -21,6 +23,7 @@ Alles tussen de ``subnet`` tags wordt geparsed, eens kijken wat er gebeurt als i
 Vet. Kijken of ik hiermee code execution kan krijgen:
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/7.PNG">
 Oké, dat kan niet. Ik zag toevallig toen ik ``/etc/passwd`` bekeek dat er 2 unieke gebruikers zijn genaamd ``Cliff`` en ``Florian``. Als ik toegang heb tot hun home folders is het misschien wel mogelijk om hun SSH keys weg te plukken.
+
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/8.PNG">
 
 Nice, ik heb nu zijn private key. Om deze te gebruiken moet het bestand eerst de goede permissisies hebben, dit kan met de commando ``chmod 600 florian_id_rsa`` en daarna kan ik inloggen als florian met 
@@ -63,6 +66,7 @@ Dit gaat dus niet werken. Als ik even niet weet wat ik moet doen doe ik meestal 
 
 `` cp -R /var/www/html/zz_backup/ /var/www/html/dev_wiki/ `` 
 Dit is heel interessant, want als ik in /var/www/html kan schrijven is het vast mogelijk om de inhoud van Cliff zijn home folder te bekijken doormiddel van symlinks, aangezien ik denk dat de cronjob wordt gerunned als Cliff. 
+
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/15.PNG">
 Ik mag de directory aanpassen. De map zz_backup moet nu een symlink naar `/home/cliff` worden, en als de cronjob word gerunned moet alle content van cliff zijn home folder in `dev_wiki` zitten. 
 
