@@ -80,8 +80,12 @@ Heel nice nu kan ik eindelijk zien wat `wp-login.py` doet:
 
 Oké.. Hij logt even en.. That's it :/. Op dit moment ga ik weer random dingen doen (nog steeds met de gedachte dat de cronjob als Cliff wordt gerunned). Ook al wist ik dat het niet mogelijk was liet ik de symlink verwijzen naar  ` /root/` om vervolgens te kijken wat er zal gebeuren.
 
+<img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/20.PNG">
+
+Tot mn verbazing zie ik root.txt en is de box klaar ¯\_(ツ)_/¯. 
+
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/18.PNG">
 
-Tot mn verbazing zie ik root.txt en is de box klaar ¯\_(ツ)_/¯. Blijkbaar ben ik slecht in verbanden trekken aangezien de file letterlijk `restore.sh` heet en zich bevindt in `/root`  (zoals je kon zien in procmon.sh). Werd op een dwaalspoor gebracht omdat de file owner Cliff was en had er niet aan gedacht dat root dat ook kan doen.
+Blijkbaar ben ik slecht in verbanden trekken aangezien de file letterlijk `restore.sh` heet en zich bevindt in `/root`  (zoals je kon zien in procmon.sh). Werd op een dwaalspoor gebracht omdat de file owner Cliff was en had er niet aan gedacht dat root dat ook kan doen.
  
 <img src="https://raw.githubusercontent.com/lilgio/hackthebox/master/images/aragog/19.PNG">
