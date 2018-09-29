@@ -28,7 +28,7 @@ Hier heb ik niet veel aan dus kijk ik verder. Na een tijdje te hebben rond gesnu
 
 Het hash algoritme dat Unix gebruikt is sha256-crypt (so naar hash-identifier). Eens kijken of `john` het wachtwoord van `sammy` misschien kan kraken.
 
-<img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday7.PNG" />
+<img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday/7.PNG" />
 
 Fijn. Nu kan ik inloggen als sammy met het wachtwoord `cooldude!`.
 
@@ -55,8 +55,3 @@ Dit is dus inderdaad wat er precies gebeurd. Het enige dat ik nu moet doen is ee
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday/12.PNG" />
 
 Hierdoor is het mogelijk om python uit te voeren in een Bash omgeving. Als ik nu hetzelfde trucje doe als net moet ik nu wel een root shell krijgen.
-
-
-<img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday/13.PNG" />
-
-Ik weet bijna zeker dat dit de unintended way is aangezien de maker echt wel zn best heeft gedaan om de aanvaller zo min mogelijk tijd te geven om /root/troll aan te passen,
