@@ -50,8 +50,7 @@ Dit is vreemd aangezien ik dit als root uitvoer en root mag /root/troll overschr
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday/11.PNG" />
 
-Dit is dus inderdaad wat er precies gebeurd. Het enige dat ik nu moet doen is een python shell in het bash scriptje doen (nc is niet geïnstalleerd).
+Nu ik zeker weet dat dit werkt gebruik ik in plaats van `whoami` gewoon `/bin/bash` om een root shell te krijgen.
 
 <img src="https://github.com/lilgio/hackthebox/blob/master/images/sunday/12.PNG" />
 
-Hierdoor is het mogelijk om python uit te voeren in een Bash omgeving. Als ik nu hetzelfde trucje doe als net moet ik nu wel een root shell krijgen.
